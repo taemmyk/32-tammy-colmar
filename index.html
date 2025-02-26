@@ -6,36 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>32-tammy-colmar</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="h-16 flex justify-around">
             <a href="#"><img src="./images/ic-logo.svg" alt="Colmar Academy logo">
-                <p>Colmar Academy<p>
-            </a>
-            <a href="#"><img src="./images/ic-on-campus.svg" alt="On campus">On campus</a>
-            <a href="#"><img src="./images/ic-online.svg" alt="Online or companies">Online or companies</a>
-            <a href="#"><img src="./images/ic-login.svg" alt="Sign in">Sign in</a>
+                <span class="hidden">Colmar Academy</span></a>
+            <a href="#"><img src="./images/ic-on-campus.svg" alt="On campus"><span class="hidden">On
+                    campus</span></a>
+            <a href="#"><img src="./images/ic-online.svg" alt="Online or companies"><span class="hidden">Online or
+                    companies</span></a>
+            <a href="#"><img src="./images/ic-login.svg" alt="Sign in"><span class="hidden">Sign in</span></a>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
+    <main class="text-neutral-700">
+        <section class="hero bg-neutral-300">
             <article class="hero__flex">
                 <figure>
                     <img src="./images/banner.jpg" class="hero__banner">
                 </figure>
-                <details class="hero__text">
-                    <h1>Learn something new everyday</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#">Start here</a>
-                </details>
+                <figcaption class="hero__text ml-4 mr-4 py-8 text-neutral-700">
+                    <h1 class="text-5xl font-bold">Learn something new everyday</h1>
+                    <p class="text-3xl font-semibold py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div
+                        class="btn__start p-4 text-center text-3xl font-semibold bg-neutral-400 hover:bg-neutral-500 text-white">
+                        <a href="#">Start here</a>
+                    </div>
+                </figcaption>
             </article>
         </section>
 
-        <section class="information">
-            <div class="information__highlight--desktop">
+        <section class="information bg-neutral-100">
+            <div class="information__highlight--desktop hidden">
                 <figure>
                     <img src="./images/information-main.jpg" alt="Information">
                 </figure>
@@ -47,101 +52,109 @@
                     <p>Emmanuel, Sr Strategist at Hiring.com</p>
                 </figcaption>
             </div>
-            <div class="information__content">
-                <article class="information__orientation">
+            <div class="information__content p-4 pt-4 pb-8">
+                <article class="information__orientation pb-16">
                     <figure>
-                        <img src="./images/information-orientation.jpg" alt="Orientation">
+                        <img src="./images/information-orientation.jpg" alt="Orientation" class="hidden">
                         <img src="./images/information-orientation-mobile.jpg" alt="Orientation">
                     </figure>
-                    <h3>Orientation date</h3>
-                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                    <a href="#">Read more</a>
+                    <figcaption class="px-4 pt-8">
+                        <h3 class="text-3xl font-semibold mb-4">Orientation date</h3>
+                        <p class="text-xl mb-4">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                        <a href="#" class="text-xl text-blue-500 hover:text-blue-600">Read more</a>
+                    </figcaption>
                 </article>
-                <article class="information__campus">
+                <article class="information__campus pb-16">
                     <figure>
-                        <img src="./images/information-campus.jpg" alt="Campus">
+                        <img src="./images/information-campus.jpg" alt="Campus" class="hidden">
                         <img src="./images/information-campus-mobile.jpg" alt="Campus">
                     </figure>
-                    <h3>Our campus</h3>
-                    <p>Find which campus is close to you</p>
-                    <a href="#">Read more</a>
+                    <figcaption class="px-4 pt-8">
+                        <h3 class="text-3xl font-semibold mb-4">Our campus</h3>
+                        <p class="text-xl mb-4">Find which campus is close to you</p>
+                        <a href="#" class="text-xl text-blue-500 hover:text-blue-600">Read more</a>
+                    </figcaption>
                 </article>
                 <article class="information__guestlecture">
                     <figure>
-                        <img src="./images/information-guest-lecture.jpg" alt="Guest lecture">
+                        <img src="./images/information-guest-lecture.jpg" alt="Guest lecture" class="hidden">
                         <img src="./images/information-guest-lecture-mobile.jpg" alt="Guest lecture">
                     </figure>
-                    <h3>Our guest lecture</h3>
-                    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                    <a href="#">Read more</a>
+                    <figcaption class="px-4 pt-8">
+                        <h3 class="text-3xl font-semibold mb-4">Our guest lecture</h3>
+                        <p class="text-xl mb-4">Join a keynote with Oliver Sack about music in medical treatment</p>
+                        <a href="#" class="text-xl text-blue-500 hover:text-blue-600">Read more</a>
+                    </figcaption>
                 </article>
             </div>
         </section>
 
-        <section class="courses">
-            <h3>Start learning</h3>
-            <div class="courses__grid">
-                <article class="courses__software">
-                    <figure>
+        <section class="courses px-4 py-8 bg-neutral-50">
+            <h3 class="text-5xl font-bold mb-4 text-center">Start learning</h3>
+            <div class="courses__grid grid grid-cols-1 gap-2">
+                <article class="courses__software px-4 pt-4 pb-6 bg-neutral-300">
+                    <figure class="hidden">
                         <img src="./images/course-software.jpg">
                     </figure>
-                    <h4>Software engineering</h4>
-                    <p>Courses</p>
-                    <p>Web development, Mobile Development, iOT, APIs</p>
+                    <h4 class="text-3xl font-semibold">Software engineering</h4>
+                    <p class="hidden">Courses</p>
+                    <p class="hidden">Web development, Mobile Development, iOT, APIs</p>
                 </article>
-                <article class="courses__compart">
-                    <figure>
+                <article class="courses__compart px-4 pt-4 pb-6 bg-neutral-300">
+                    <figure class="hidden">
                         <img src="./images/course-computer-art.jpg">
                     </figure>
-                    <h4>Computer art</h4>
-                    <p>Courses</p>
-                    <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                    <h4 class="text-3xl font-semibold">Computer art</h4>
+                    <p class="hidden">Courses</p>
+                    <p class="hidden">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
+                    </p>
                 </article>
-                <article class="courses__compart">
-                    <figure>
+                <article class="courses__compart px-4 pt-4 pb-6 bg-neutral-300">
+                    <figure class="hidden">
                         <img src="./images/course-computer-art.jpg">
                     </figure>
-                    <h4>Computer art</h4>
-                    <p>Courses</p>
-                    <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                    <h4 class="text-3xl font-semibold">Computer art</h4>
+                    <p class="hidden">Courses</p>
+                    <p class="hidden">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
+                    </p>
                 </article>
-                <article class="courses__design">
-                    <figure>
+                <article class="courses__design px-4 pt-4 pb-6 bg-neutral-300">
+                    <figure class="hidden">
                         <img src="./images/course-design.jpg">
                     </figure>
-                    <h4>Computer art</h4>
-                    <p>Courses</p>
-                    <p>User Experience Design, User Research, Visual Design</p>
+                    <h4 class="text-3xl font-semibold">Computer art</h4>
+                    <p class="hidden">Courses</p>
+                    <p class="hidden">User Experience Design, User Research, Visual Design</p>
                 </article>
-                <article class="courses__data">
-                    <figure>
+                <article class="courses__data px-4 pt-4 pb-6 bg-neutral-300">
+                    <figure class="hidden">
                         <img src="./images/course-data.jpg">
                     </figure>
-                    <h4>Data</h4>
-                    <p>Courses</p>
-                    <p>Data Science, Big Data, SQL, Data Visualization</p>
+                    <h4 class="text-3xl font-semibold">Data</h4>
+                    <p class="hidden">Courses</p>
+                    <p class="hidden">Data Science, Big Data, SQL, Data Visualization</p>
                 </article>
-                <article class="courses__business">
-                    <figure>
+                <article class="courses__business px-4 pt-4 pb-6 bg-neutral-300">
+                    <figure class="hidden">
                         <img src="./images/course-business.jpg">
                     </figure>
-                    <h4>Business</h4>
-                    <p>Courses</p>
-                    <p>Product Development, Business Development, Startup</p>
+                    <h4 class="text-3xl font-semibold">Business</h4>
+                    <p class="hidden">Courses</p>
+                    <p class="hidden">Product Development, Business Development, Startup</p>
                 </article>
-                <article class="courses__marketing">
-                    <figure>
+                <article class="courses__marketing px-4 pt-4 pb-6 bg-neutral-300">
+                    <figure class="hidden">
                         <img src="./images/course-marketing.jpg">
                     </figure>
-                    <h4>Marketing</h4>
-                    <p>Courses</p>
-                    <p>Analytics, Content Marketing, Mobile Marketing</p>
+                    <h4 class="text-3xl font-semibold">Marketing</h4>
+                    <p class="hidden">Courses</p>
+                    <p class="hidden">Analytics, Content Marketing, Mobile Marketing</p>
                 </article>
             </div>
         </section>
 
-        <section class="thesis">
-            <h3>Thesis exhibit</h3>
+        <section class="thesis pt-8 pb-6">
+            <h3 class="text-5xl font-bold mb-4 text-center">Thesis exhibit</h3>
             <article class="thesis__flex">
                 <section class="thesis__primary">
                     <figure>
@@ -150,13 +163,13 @@
                             tag.
                         </video>
                     </figure>
-                    <figcaption>
+                    <figcaption class="hidden">
                         <h4>Reimagine urban</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta laboriosam sequi distinctio
+                            voluptates vitae officia eum mollitia suscipit, corrupti libero.</p>
                     </figcaption>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta laboriosam sequi distinctio
-                        voluptates vitae officia eum mollitia suscipit, corrupti libero.</p>
                 </section>
-                <aside class="thesis__secondary">
+                <aside class="thesis__secondary hidden">
                     <article class="thesis__fisma">
                         <figure>
                             <img src="./images/thesis-fisma.jpg">
@@ -180,10 +193,10 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2016 Colmar Academy. All rights reserved</p>
-        <a href="#">Terms</a>
-        <a href="#">Privacy</a>
+    <footer class="my-4 px-4">
+        <p class="text-lg">&copy; 2016 Colmar Academy. All rights reserved</p>
+        <a href="#" class="hidden">Terms</a>
+        <a href="#" class="hidden">Privacy</a>
     </footer>
 </body>
 
